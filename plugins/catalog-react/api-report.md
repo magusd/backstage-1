@@ -268,11 +268,14 @@ export type EntityPeekAheadPopoverProps = PropsWithChildren<{
 
 // @public
 export interface EntityPresentationApi {
-  // (undocumented)
-  textualEntityRef(options: {
-    entityRef: string;
-    variant?: string;
-  }): Promise<EntityRefPresentation>;
+  forEntity(
+    entityOrRef: Entity | string,
+    context?: {
+      variant?: string;
+      defaultKind?: string;
+      defaultNamespace?: string;
+    },
+  ): EntityRefPresentation;
 }
 
 // @public
@@ -320,6 +323,14 @@ export type EntityRefLinksProps<
 
 // @public
 export interface EntityRefPresentation {
+  snapshot: EntityRefPresentationSnapshot;
+  update$: Observable<EntityRefPresentationSnapshot>;
+}
+
+// @public
+export interface EntityRefPresentationSnapshot {
+  // (undocumented)
+  entity?: Entity | undefined;
   // (undocumented)
   entityRef: string;
   // (undocumented)
@@ -547,6 +558,16 @@ export function useEntityOwnership(): {
   loading: boolean;
   isOwnedEntity: (entity: Entity) => boolean;
 };
+
+// @public
+export function useEntityPresentation(
+  entityOrRef: Entity | CompoundEntityRef | string,
+  context?: {
+    variant?: string;
+    defaultKind?: string;
+    defaultNamespace?: string;
+  },
+): EntityRefPresentationSnapshot;
 
 // @public
 export function useEntityTypeFilter(): {
