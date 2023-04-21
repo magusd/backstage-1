@@ -1,5 +1,13 @@
 # @backstage/plugin-jenkins-backend
 
+## 0.1.35-next.0
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/backend-common@0.18.5-next.0
+  - @backstage/plugin-auth-node@0.2.14-next.0
+
 ## 0.1.34
 
 ### Patch Changes

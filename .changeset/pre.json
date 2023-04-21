@@ -221,5 +221,12 @@
     "@backstage/plugin-vault-backend": "0.3.0",
     "@backstage/plugin-xcmetrics": "0.2.37"
   },
-  "changesets": []
+  "changesets": [
+    "create-app-1682111296",
+    "eighty-olives-live",
+    "five-tigers-whisper",
+    "lazy-keys-work",
+    "pretty-gifts-greet",
+    "six-mails-shout"
+  ]
 }

@@ -1,5 +1,14 @@
 # @backstage/backend-common
 
+## 0.18.5-next.0
+
+### Patch Changes
+
+- 284db225083: Updated the `DatabaseManager` to include the plugin id in the Postgres application name of the database connections created for each plugin.
+- Updated dependencies
+  - @backstage/backend-app-api@0.4.3-next.0
+  - @backstage/backend-plugin-api@0.5.2-next.0
+
 ## 0.18.4
 
 ### Patch Changes

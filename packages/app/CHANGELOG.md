@@ -1,5 +1,16 @@
 # example-app
 
+## 0.2.83-next.0
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-stack-overflow@0.1.14-next.0
+  - @backstage/plugin-circleci@0.3.18-next.0
+  - @backstage/plugin-home@0.5.1-next.0
+  - @backstage/plugin-shortcuts@0.3.10-next.0
+  - @backstage/cli@0.22.6
+
 ## 0.2.82
 
 ### Patch Changes

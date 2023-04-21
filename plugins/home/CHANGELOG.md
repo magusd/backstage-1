@@ -1,5 +1,11 @@
 # @backstage/plugin-home
 
+## 0.5.1-next.0
+
+### Patch Changes
+
+- 5272cfabc3b: Add missing @rjsf/core dependency
+
 ## 0.5.0
 
 ### Minor Changes

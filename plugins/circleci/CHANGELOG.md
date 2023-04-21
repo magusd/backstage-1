@@ -1,5 +1,11 @@
 # @backstage/plugin-circleci
 
+## 0.3.18-next.0
+
+### Patch Changes
+
+- 451b3cadb3d: Fixes row display for in progress jobs to not display trailing "took"
+
 ## 0.3.17
 
 ### Patch Changes

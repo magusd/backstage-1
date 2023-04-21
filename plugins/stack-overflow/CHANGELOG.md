@@ -1,5 +1,13 @@
 # @backstage/plugin-stack-overflow
 
+## 0.1.14-next.0
+
+### Patch Changes
+
+- c1ff65f315a: StackOverflowSearchResultListItem can now accept an empty result prop so that it can be rendered in the suggested SearchResultListItem pattern.
+- Updated dependencies
+  - @backstage/plugin-home@0.5.1-next.0
+
 ## 0.1.13
 
 ### Patch Changes
