@@ -71,7 +71,7 @@ export const CatalogFilterLayout: {
 export type CatalogReactComponentsNameToClassKey = {
   CatalogReactUserListPicker: CatalogReactUserListPickerClassKey;
   CatalogReactEntityLifecyclePicker: CatalogReactEntityLifecyclePickerClassKey;
-  CatalogReactEntityRefLink: CatalogReactEntityRefLinkClassKey;
+  CatalogReactEntityRef: CatalogReactEntityRefClassKey;
   CatalogReactEntitySearchBar: CatalogReactEntitySearchBarClassKey;
   CatalogReactEntityTagPicker: CatalogReactEntityTagPickerClassKey;
   CatalogReactEntityOwnerPicker: CatalogReactEntityOwnerPickerClassKey;
@@ -87,8 +87,8 @@ export type CatalogReactEntityOwnerPickerClassKey = 'input';
 // @public (undocumented)
 export type CatalogReactEntityProcessingStatusPickerClassKey = 'input';
 
-// @public (undocumented)
-export type CatalogReactEntityRefLinkClassKey = 'icon';
+// @public
+export type CatalogReactEntityRefClassKey = 'icon';
 
 // @public (undocumented)
 export type CatalogReactEntitySearchBarClassKey = 'searchToolbar' | 'input';
@@ -296,6 +296,9 @@ export interface EntityProviderProps {
 }
 
 // @public
+export const EntityRef: (props: EntityRefProps) => JSX.Element;
+
+// @public
 export const EntityRefLink: (props: EntityRefLinkProps) => JSX.Element;
 
 // @public
@@ -340,6 +343,13 @@ export interface EntityRefPresentationSnapshot {
   // (undocumented)
   secondaryTitle?: string;
 }
+
+// @public
+export type EntityRefProps = {
+  entityRef: Entity | CompoundEntityRef | string;
+  defaultKind?: string;
+  defaultNamespace?: string;
+};
 
 // @public
 export function entityRouteParams(entity: Entity): {
